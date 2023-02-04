@@ -1,23 +1,117 @@
-.on-hover:hover {
-    background-color: black;
+body{
+    background-color: rgba(245, 245, 220, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 650px;
 }
 
-.new-divs {
+.new-divs{
     background-color: rgb(255, 255, 255);
     border: 0px;
     padding: 0px;
     margin: 0px;
 }
 
+#buttons-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin: 13px;
+    width: 110px;
+    height: 18px;
+}
+
+button{
+    transition-duration: 0.4s;
+    font-size: 16px;
+}
+
+
+#eraser{
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#eraser:hover{
+    background-color: #ffffff; /* Green */
+    color: white;
+}
+
+#rgb{
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#rgb:hover{
+    background-image: linear-gradient(120deg, red,orange,yellow,green,blue,indigo,violet);
+    color: white;
+}
+
+#black{
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#black:hover{
+    background-color: #000000;
+    color:white;
+}
+
+#shading{
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#shading:hover{
+    background-image: linear-gradient(120deg, rgb(200, 200, 200),rgb(150, 150, 150),rgb(100, 100, 100),rgb(50, 50, 50),rgb(0, 0, 0));
+    color: black;
+}
+
+#clear{
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#clear:hover{
+    background-color: #c4c4c4;
+    color: black;
+}
+
+#size{
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#size:hover{
+    animation:breath 4s linear infinite;
+}
+
+@keyframes breath{
+    0%{transform: scale(1);}
+    33%{transform: scale(1.05);}
+    66%{transform: scale(.95);}
+    100%{transform: scale(1);}
+}
+
+
+#fake-div{
+    width: 90.09px;
+}
+
 #grid {
+    background-color: rgb(255, 255, 255);
     display: grid;
     width: 550px;
     height: 550px; 
     box-shadow: 0px 0px 3px 2px;
 }
-body {
-    background-color: rgba(245, 245, 220, 0.61);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
